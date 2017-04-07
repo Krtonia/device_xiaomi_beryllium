@@ -86,3 +86,7 @@ PRODUCT_COPY_FILES += \
 # PocketMode
 PRODUCT_PACKAGES += \
     XiaomiPocketMode
+
+# WiFi
+PRODUCT_PACKAGES += \
+    TargetWifiOverlay
