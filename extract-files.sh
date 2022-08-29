@@ -10,7 +10,7 @@
 function blob_fixup() {
     case "${1}" in
     system_ext/lib64/lib-imsvideocodec.so)
-        ${PATCHELF} --add-needed "lib-imsvtshim.so" "${2}"
+        "${PATCHELF}" --add-needed "lib-imsvtshim.so" "${2}"
         ;;
     esac
 }
