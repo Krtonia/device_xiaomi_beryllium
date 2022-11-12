@@ -688,8 +688,8 @@
 
     <!-- Height of the status bar -->
     <dimen name="status_bar_height_portrait">86.0px</dimen>
-    <dimen name="status_bar_height_landscape">34dp</dimen>
-    <dimen name="rounded_corner_radius">24dp</dimen>
+    <dimen name="status_bar_height_landscape">86.0px</dimen>
+    <dimen name="rounded_corner_radius">104px</dimen>
 
     <!-- Default value for proximity check on screen wake
      NOTE ! - Enable for devices that have a fast response proximity sensor (ideally < 300ms)-->
@@ -713,7 +713,4 @@
 
     <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
     <bool name="config_zramWriteback">true</bool>
-
-    <!-- Statusbar Icon Size -->
-    <dimen name="status_bar_icon_size">15dp</dimen>
 </resources>

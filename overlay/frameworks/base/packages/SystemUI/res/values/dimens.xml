@@ -28,19 +28,13 @@
     <dimen name="keyguard_carrier_text_margin">20dp</dimen>
  
     <!-- Margin on the right side of the system icon group on Keyguard. -->
-    <dimen name="system_icons_keyguard_padding_end">8dp</dimen>
-
-    <!-- Status Bar Clock Size -->
-    <dimen name="status_bar_clock_size">14sp</dimen>
-
-    <!-- Statusbar Notification Icon Size -->
-    <dimen name="status_bar_icon_drawing_size">13dp</dimen>
+    <dimen name="system_icons_keyguard_padding_end">12dp</dimen>
 
     <!-- The starting padding for the clock in the status bar. -->
-    <dimen name="status_bar_clock_starting_padding">2dp</dimen>
+    <dimen name="status_bar_clock_starting_padding">2.5dp</dimen>
 
     <!-- End padding for left-aligned status bar clock -->
-    <dimen name="status_bar_left_clock_end_padding">1.5dp</dimen>
+    <dimen name="status_bar_left_clock_end_padding">2.5dp</dimen>
 
     <!-- Padding between signal cluster and battery icon -->
     <dimen name="signal_cluster_battery_padding">3dp</dimen>
