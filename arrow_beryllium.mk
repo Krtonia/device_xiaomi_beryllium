@@ -6,11 +6,21 @@
 
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Arrow stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
+
+# Arrow Stuff
+ARROW_COMMUNITY := true
+ARROW_GAPPS := true
+WITH_GMS := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+
+# BootAnimation
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_beryllium
+PRODUCT_NAME := arrow_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1
