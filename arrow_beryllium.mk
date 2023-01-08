@@ -19,6 +19,9 @@ TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 # BootAnimation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Maintainer
+DEVICE_MAINTAINER := Shikhar
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := arrow_beryllium
 PRODUCT_DEVICE := beryllium
