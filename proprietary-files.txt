@@ -190,17 +190,19 @@ vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/vendor.goodix.hardware.fingerprintextension@1.0.so
 
-# FM
+# FM (system)
 lib64/fm_helium.so
 lib64/libfm-hci.so
 lib/fm_helium.so
 lib/libfm-hci.so
 -product/lib64/vendor.qti.hardware.fm@1.0.so
 -product/lib/vendor.qti.hardware.fm@1.0.so
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.fm@1.0.so
-vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib/vendor.qti.hardware.fm@1.0.so
+
+# FM (vendor) - from PNX - RKQ1.200906.002
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|4422f5912f3614468ccc06a2cce528a152828023
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|17e86e9a2054db733d955fcf1066f6e06a44fb21
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|a27bdc49e85976faa5785b175c92df54f962352a
+vendor/lib/vendor.qti.hardware.fm@1.0.so|ec14a34ecae5061d674283499a812374c8be4ce5
 
 # GNSS - from PNX - RKQ1.200906.002
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti|bd3d5174f69cf65047c8d8b159554515b0f3d022
@@ -294,11 +296,11 @@ vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libkeymasterprovision.so
 vendor/lib/libkeymasterutils.so
 
-# Snapdragon Computer Vision Engine
-vendor/lib64/libscveFaceLandmarks.so
-vendor/lib64/libscveFaceRecognition.so
-vendor/lib/libscveFaceLandmarks.so
-vendor/lib/libscveFaceRecognition.so
+# Snapdragon Computer Vision Engine - from PNX - RKQ1.200906.002
+vendor/lib64/libscveFaceLandmarks.so|76268f76716460eacc311e42fe08b0a8cb814f28
+vendor/lib64/libscveFaceRecognition.so|a561fc6431d411c0a7620ecbbf21ca2c65704c69
+vendor/lib/libscveFaceLandmarks.so|d1ba20425666fc52a3831f24fb82acce3a5761b2
+vendor/lib/libscveFaceRecognition.so|58d4069d250ec214483fc660df05da3fc1816886
 
 # Sensors
 vendor/lib64/sensors.ssc.so
