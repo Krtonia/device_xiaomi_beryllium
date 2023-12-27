@@ -6,19 +6,19 @@
 
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+# Inherit some common DerpFest stuff.
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
-EVO_BUILD_TYPE := UNOFFICIAL
+# Derpfest flags
+DERP_BUILDTYPE := UNOFFICIAl
+TARGET_USES_BLUR := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_BUILD_APERTURE_CAMERA := false
-TARGET_SUPPORTS_QUICK_TAP := true
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_beryllium
+PRODUCT_NAME := derp_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1
