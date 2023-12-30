@@ -7,10 +7,10 @@
 $(call inherit-product, device/xiaomi/beryllium/device.mk)
 
 # Inherit some common DerpFest stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/awaken/config/common_full_phone.mk)
 
 # Derpfest flags
-DERP_BUILDTYPE := UNOFFICIAl
+AWAKEN_BUILDTYPE := UNOFFICIAl
 TARGET_USES_BLUR := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
@@ -18,7 +18,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_beryllium
+PRODUCT_NAME := awaken_beryllium
 PRODUCT_DEVICE := beryllium
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO F1
