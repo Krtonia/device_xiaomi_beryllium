@@ -15,8 +15,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/blaze_beryllium.mk
-
-COMMON_LUNCH_CHOICES := \
-    blaze_beryllium-user \
-    blaze_beryllium-userdebug \
-    blaze_beryllium-eng
