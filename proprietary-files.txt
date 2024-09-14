@@ -185,24 +185,20 @@ vendor/etc/sdr_config.cfg
 # Fingerprint
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.sdm845.so
 vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.sdm845.so
-vendor/lib64/com.fingerprints.extension@1.0.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
-vendor/lib64/vendor.goodix.hardware.fingerprintextension@1.0.so
 
-# FM (system) - from qssi-user-14-UP1A.231005.007-2310072102-release-keys
-system_ext/lib64/fm_helium.so|5c9bf4a0ec6e9767b31571d127ac586c15eb3a8b
-system_ext/lib64/libfm-hci.so|96d572c590a04044f0db89356342e64ead887bc4
-system_ext/lib/fm_helium.so|cc635a02b4815434f89820186e491a513a26b6ed
-system_ext/lib/libfm-hci.so|003aefcdd0725b78442c38095b441e6df111d445
--system_ext/lib64/vendor.qti.hardware.fm@1.0.so|15f2b7444d7f274d7b90ef7512dd75323b3bc0c5
--system_ext/lib/vendor.qti.hardware.fm@1.0.so|d73010c25b9a087451407200f6cb0f99e27540b4
-
-# FM (vendor) - from PNX - RKQ1.200906.002
-vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|4422f5912f3614468ccc06a2cce528a152828023
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|17e86e9a2054db733d955fcf1066f6e06a44fb21
-vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|a27bdc49e85976faa5785b175c92df54f962352a
-vendor/lib/vendor.qti.hardware.fm@1.0.so|ec14a34ecae5061d674283499a812374c8be4ce5
+# FM
+system/lib64/fm_helium.so:system_ext/lib64/fm_helium.so
+system/lib64/libfm-hci.so:system_ext/lib64/libfm-hci.so
+system/lib/fm_helium.so:system_ext/lib/fm_helium.so
+system/lib/libfm-hci.so:system_ext/lib/libfm-hci.so
+-product/lib64/vendor.qti.hardware.fm@1.0.so:system_ext/lib64/vendor.qti.hardware.fm@1.0.so
+-product/lib/vendor.qti.hardware.fm@1.0.so:system_ext/lib/vendor.qti.hardware.fm@1.0.so
+vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.fm@1.0.so
+vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
+vendor/lib/vendor.qti.hardware.fm@1.0.so
 
 # GNSS - from PNX - RKQ1.200906.002
 vendor/bin/hw/android.hardware.gnss@2.1-service-qti|bd3d5174f69cf65047c8d8b159554515b0f3d022
@@ -231,6 +227,7 @@ vendor/lib/libgnsspps.so|8733dcb7fd4a4374c6547a5d8346de527c8cd496
 vendor/lib/libgps.utils.so|6a9372f12172dcc94bfffee1c17c784127330f08
 vendor/lib/libizat_client_api.so|c79f9082521e3dff14626ef9d36473c87af1088e
 vendor/lib/libizat_core.so|ffba4f88f1d706df0294f4a3ddf34ed1a0d06fae
+vendor/lib/libjnihelper.so|ef2c1ecf3a0e02125d78af8a16aea074d4337034
 vendor/lib/liblbs_core.so|a91fa332efa95c36242a398484e352c7debb19b4
 vendor/lib/libloc_api_v02.so|8e290c390eafe9720dfa0c35bdc57b9b08f37d6b
 vendor/lib/libloc_core.so|c9e4830d825bebe808853c17ad1039b28e6111c1
@@ -263,6 +260,7 @@ vendor/lib64/libgnsspps.so|f8b2e3f70d4e51982b061dcd6d26a6ead45b4900
 vendor/lib64/libgps.utils.so|e178821db6e45204310da49b173eb0f63a4f56f0
 vendor/lib64/libizat_client_api.so|c4bab8714a378aa5773a24c78d7b7af09437dc47
 vendor/lib64/libizat_core.so|aecb6d3f4ceba32a4524cb086afc39f13fd1e69f
+vendor/lib64/libjnihelper.so|fb8690fbb5b8fbb97ded1bd8d4f87285ec74cf41
 vendor/lib64/liblbs_core.so|783ea543eb99f612f8000d48c298cf26146277df
 vendor/lib64/libloc_api_v02.so|2a98b16df385a6b73f93b86974b63fb318d58761
 vendor/lib64/libloc_core.so|107da3079c22d9505d3737033bab1e22c3005f53
